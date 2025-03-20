@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Student page: Jordan Noeuku </title>
+
+        <!--this will display an icon at the website link-->
+        <link rel="icon" type="image/jpeg" href="images/IMG_2778.jpeg">
+
+       <link rel="stylesheet" href="PageStyle.css"> <!--This is the link to the css file-->
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        .course-list {
+            margin-top: 20px;
+        }
+    </style>
+     
+    </head>
+
+    <body class="InBody04">
+       <header>
+            <h2 class= "box4">
+                <span style="color: rgb(252, 252, 252)"> Jordan Noeuku </span>
+                <a href =  "MainPage.html" style="color:white">&nbsp; Main Page &nbsp; </a>
+                <a href = "Page02.html" style="color:white">&nbsp; My story &nbsp; </a> 
+                <a href = "Page03.html" style="color:white">&nbsp; Work Experience &nbsp; </a> 
+            </h2>
+
+            <h1 id="heading"> Classes Taken </h1>
+
+        </header>
+    
+        <a href="images/IMG_7500.jpg" rel="me">
+            <img src="images/IMG_7500.jpg" alt = "There is a picture of me as of yet" class="forth_img"> 
+        </a>
+        
+    <div class="space">
+        <h1>Course Entry</h1>
+        <p> subject, course number, course name.</p>
+        <p> Example: HCSC 330: Web Programming</p>
+        <form id="courseForm">
+            <label>
+                Department:
+                <input type="text" id="department" required>
+            </label>
+            <label>
+                Number:
+                <input type="text" id="number" required>
+            </label>
+            <label>
+                Title:
+                <input type="text" id="title" required>
+            </label>
+            <button type="button" id="addCourseButton">Add Course</button>
+        </form>
+        <div class="course-list">
+            <h2>Courses:</h2>
+            <!-- Display added courses here -->
+            <div id="courseContainer"></div>
+        </div> 
+    </div>
+        <script src ="Pagejav.js"> </script>
+
+    </body>
+    
+    </html>
